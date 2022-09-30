@@ -1,30 +1,57 @@
-<script>
-
-</script>
+<script></script>
 <template>
-<ul class="nav justify-content-center uldiv">
-    <div class="navbarlist">
-    <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="/homepage">Home</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="/about">About</a>
-    </li>
-    <li class="nav-item">
-    <a class="nav-link" href="/interesting">Interested</a>
-    </li>
+<header class="d-flex flex-column justify-content-center align-items-center sticky-top">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <div class="d-flex justify-content-center align-items-center">
+          <h1><span>VOLUNTARY</span>ABROAD</h1>
+      </div>
     </div>
-</ul>
+    <nav class="d-flex justify-content-center align-items-center">
+      <ul class="d-flex justify-content-around align-items-center">
+        <li><router-link to="/homepage">HOME</router-link></li>
+        <li><router-link to="/interesting">INTERESTED</router-link></li>
+        <li><router-link to="/ABOUT">ABOUT</router-link></li>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <style scoped>
-a{
-    color: white;
+@import "../assets/base.css";
+
+header {
+  width: 100%;
+  height: 150px;
+  background-color: var(--vt-c-green);
 }
-.uldiv{
-    background-color: black;
+/*  */
+h1 {
+  cursor: pointer;
+  font-size: 65px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px;
 }
-.navbarlist{
-    display: flex;
+h1:hover {
+  color: var(--vt-c-indigo);
+}
+span {
+  color: var(--vt-c-white);
+}
+
+nav {
+  width: 100%;
+  height: 40px;
+}
+ul {
+  width: 60%;
+}
+li {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  list-style-type: none;
+}
+a:hover {
+  color: white;
 }
 </style>
