@@ -8,9 +8,9 @@
     </div>
     <nav class="d-flex justify-content-center align-items-center">
       <ul class="d-flex justify-content-around align-items-center">
-        <li><router-link to="/homepage">HOME</router-link></li>
+        <li><router-link to="/">VOLUNTEERING</router-link></li>
         <li><router-link to="/interesting">INTERESTED</router-link></li>
-        <li><router-link to="/ABOUT">ABOUT</router-link></li>
+        <li><router-link to="/ABOUT">ABOUT US</router-link></li>
       </ul>
     </nav>
   </header>
